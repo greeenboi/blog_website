@@ -8,7 +8,7 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>Suvan's Blog</title>
+        <title>About Us</title>
       </Head>
       <Navbar />
       <main className="flex min-h-screen flex-col items-center justify-between p-24 pt-12 ">

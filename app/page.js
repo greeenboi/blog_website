@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
     <Head>
-      <title>Suvan's Blog</title>
+      <title>Bloggerize</title>
     </Head>
       <Navbar />
       <main className="flex min-h-screen flex-col items-center justify-between p-24 pt-12 ">
