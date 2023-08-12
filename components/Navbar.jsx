@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -13,7 +14,7 @@ const Navbar = () => {
     <div className='flex flex-row md:flex-col md:w-screen md:h-28 w-auto h-auto items-center mt-2 pt-2 justify-evenly 2xl:scale-130'>
         <div className="flex flex-row justify-start ">
         <Link href="/">
-            <img
+            <Image
             className="logo dark:drop-shadow-[0_0_0.3rem_#ffffff70] "
             src="/logot.png"
             alt="Bloggerize Logo"
