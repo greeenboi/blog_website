@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;1,6..12,200;1,6..12,300;1,6..12,400&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Tilt+Prism&display=swap');
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  overflow-x: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@font-face {
+  font-family: 'Tilt'; /*a name to be used later*/
+  src: url('../public/tilt.ttf'); /*URL to font*/
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.head-container{
+  background: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.6) 100%), url('https://images.unsplash.com/photo-1495757450029-09dbedacbc36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Tilt';
+  font-weight: 400;
+  font-size: 128px;
+  height: 600px;
+  width: 100vw;
+  padding: 2rem 1.5rem;
+  justify-content: center;
+}
