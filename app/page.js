@@ -1,15 +1,19 @@
-
 import Navbar from '@/components/Navbar'
+import Head from 'next/head'
+
 export default function Home() {
   return (
     <>
+    <Head>
+      <title>Suvan's Blog</title>
+    </Head>
       <Navbar />
       <main className="flex min-h-screen flex-col items-center justify-between p-24 pt-12 ">
-        <section className="head-container font-sans w-screen">
+        <section className="head-container font-sans w-screen"> 
           <h1 className=' font-normal text-5xl lg:text-9xl'>THE BLOG</h1>
         </section>
         <section className='flex flex-row h-max w-full'>
-          <p className=' font-nunito'>Featured</p>
+          <p className=' font-montserrat '>Featured</p>
           <div className='grid grid-flow-row items-center justify-center lg:grid-flow-col h-fit flex-1 auto-cols-max gap-4 md:gap-6 lg:gap-10'>
             <div className='flex flex-col p-6 border border-emerald-600 hover:border-emerald-800 m-2 items-center rounded-md'><h1>Title</h1>Hello <button>view post</button></div>
             <div className='flex flex-col p-6 border border-emerald-600 hover:border-emerald-800 m-2 items-center rounded-md'><h1>Title</h1>Hello <button>view post</button></div>
