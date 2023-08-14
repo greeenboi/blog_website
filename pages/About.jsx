@@ -18,7 +18,7 @@ const About = () => {
         <section className='flex flex-col md:flex-row w-full gap-6 '>
           
           <div className="flex flex-col rounded-2xl transition-all hover:opacity-70 ">
-            <Image width="128px" src="/final me.png" alt="suvan"/>
+            <Image width="128" height="128" src="/final me.png" alt="suvan"/>
           </div>
           
             <p className="flex flex-col h-max w-11/12 p-2 m-2 flex-1 text-ellipsis bg-zinc-800 bg-opacity-80 rounded-md ">
