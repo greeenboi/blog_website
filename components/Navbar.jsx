@@ -2,10 +2,12 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Login from './Login';
 
 const Navbar = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
-
+  
+  
+  const [menuOpen, setMenuOpen] = useState(false);
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
      };
@@ -22,9 +24,9 @@ const Navbar = () => {
             height={37}
             />
         </Link>
-        <button className='hidden relative md:flex self-center ml-8 pl-6 pr-6 pt-1 pb-1 border border-emerald-300 rounded-md hover:bg-emerald-600 hover:opacity-75 md:cursor-pointer transition-opacity active:scale-105'>
-          login
-        </button>
+        <div className="hidden md:flex"> 
+          <Login />
+        </div>
       </div>
       <div className='md:hidden'>
         <button
@@ -44,8 +46,8 @@ const Navbar = () => {
               />
             ) : (
               <path
-                fill-rule='evenodd'
-                clip-rule='evenodd'
+                fillRule='evenodd'
+                clipRule='evenodd'
                 d='M4 6H20V5H4v1zm0 5h16v-1H4v1zm0 5h16v-1H4v1z'
               />
             )}
@@ -57,7 +59,7 @@ const Navbar = () => {
                 <p className='block cursor-pointer'>Recent</p>
                 <p className='block cursor-pointer'>Announcements</p>
                 <Link href="/About" className='block cursor-pointer'>About us</Link>
-                <button className=' p-2 border border-emerald-300 rounded-xl active:scale-105 ' >login</button>
+                <Login/>
             </div>            
         )}
       </div>
